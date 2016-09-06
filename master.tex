@@ -1,0 +1,42 @@
+% !TEX encoding = UTF-8 Unicode
+
+% — create warnings about outdated stuff
+%\RequirePackage[l2tabu, orthodox]{nag}
+
+%\def \papersize {a5paper}
+\def \papersize {a4paper}
+%\def \papersize {letterpaper}
+
+%\documentclass[14pt,\papersize]{extarticle}
+\documentclass[12pt,\papersize,twoside]{article}
+%\usepackage[\papersize,pagesize,DIV=8]{typearea}
+% extarticle is like article but can handle 8pt, 9pt, 10pt, 11pt, 12pt, 14pt, 17pt, and 20pt text
+
+\def \ititle{The Title}
+\def \isubtitle{}
+\def \iauthor{Stephen A.\ Butterfill %\\ University of Warwick, UK
+}
+\def \iemail{s.butterfill@warwick.ac.uk% \& corrado.sinigaglia@unimi.it
+}
+%\def \iauthor {}
+%\def \iemail{}
+\date{}
+
+\input{~/latex_imports/preamble_steve_paper7}
+
+\begin{document}
+
+\setlength\footnotesep{1em}
+%\tableofcontents
+% remove headers and footers on first page only
+% \thispagestyle{firststyle}
+
+
+
+
+
+\begin{refcontext}[sorting=nyt]
+\printbibliography
+\end{refcontext}
+
+\end{document}
